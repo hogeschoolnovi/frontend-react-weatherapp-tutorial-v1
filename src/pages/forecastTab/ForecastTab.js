@@ -71,7 +71,7 @@ function ForecastTab() {
 
         <section className="forecast-weather">
             <span>
-              12&deg;
+              12&deg; C
             </span>
           <span className="weather-description">
               Licht Bewolkt

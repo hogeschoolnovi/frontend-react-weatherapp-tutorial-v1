@@ -9,9 +9,8 @@ function SearchBar() {
         name="search"
         placeholder="Zoek een stad in Nederland"
       />
-      <button
-        type="button"
-      >
+
+      <button type="button">
         Zoek
       </button>
     </span>
