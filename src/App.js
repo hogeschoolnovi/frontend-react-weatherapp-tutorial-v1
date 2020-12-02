@@ -15,7 +15,9 @@ function App() {
 
           <span className="location-details">
             <h2>Bewolkt</h2>
+            <h3> </h3>
             <h1>14 &deg;</h1>
+
             <button type="button">
               Haal data op!
             </button>
