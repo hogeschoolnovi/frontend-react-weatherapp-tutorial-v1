@@ -1,0 +1,35 @@
+.legend {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 10px;
+}
+
+.chart {
+    padding: 12px;
+    border-bottom: 1px solid #C6BCB3;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFAF6;
+}
+
+.day-part {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    max-width: 60px;
+}
+
+.icon-wrapper {
+    width: 40px;
+}
+
+.day-part .description {
+    margin: 8px 0;
+    min-height: 34px;
+    font-weight: 600;
+}

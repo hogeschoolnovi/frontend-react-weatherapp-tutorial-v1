@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Weather App Tutorial
+Deze tutorial is ontwikkelt om je stapsgewijs wegwijs te maken in de wat meer advanced concepten van React, 
+naar aanleiding van de content uit de cursus **React** op EdHub.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Eindresultaat
+Wanneer je de volledige tutorial afgerond hebt, zal de webpagina er zo uit komen te zien:
 
-In the project directory, you can run:
+![Eindresultaat](src/assets/screenshot.gif)
 
-### `npm start`
+## De applicatie starten
+Als je het project gecloned hebt naar jouw locale machine, installeer je eerst de node_modules door het volgende commando in de terminal te runnen:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm install`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 
-### `npm test`
+`npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina in de browser te bekijken. Begin met het maken van wijzigingen in `src/App.js`: elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op de webpagina.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tussenstappen bekijken
+De tutorial werkt in stapjes. Na elke stap kun je de bijbehorende branch bekijken om te zien hoe de applicatie er op dat moment uit zou moeten zien:
+1. **Stap 1: Weersvoorspelling Utrecht ophalen**
+Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();
+2. **Stap 2: Zoektermen doorgeven** 
+Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();
+3. **Stap 3: Dynamisch zoeken** 
+Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();
+4. **Stap 4: Conditionele properties** 
+Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();
