@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+import SearchBar from './components/searchBar/SearchBar';
+import TabBarMenu from './components/tabBarMenu/TabBarMenu';
+import MetricSlider from './components/metricSlider/MetricSlider';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="weather-container">
+
+        {/*HEADER -------------------- */}
+        <div className="weather-header">
+          <SearchBar/>
+
+          <span className="location-details">
+            <h2>Bewolkt</h2>
+            <h3> </h3>
+            <h1>14 &deg;</h1>
+
+            <button type="button">
+              Haal data op!
+            </button>
+          </span>
+        </div>
+
+        {/*CONTENT ------------------ */}
+        <div className="weather-content">
+          <TabBarMenu/>
+
+          <div className="tab-wrapper">
+            Alle inhoud van de tabbladen komt hier!
+          </div>
+        </div>
+
+        <MetricSlider/>
+      </div>
+    </>
   );
 }
 

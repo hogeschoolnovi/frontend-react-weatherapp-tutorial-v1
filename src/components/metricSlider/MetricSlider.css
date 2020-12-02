@@ -1,0 +1,68 @@
+.weather-container-extention {
+	position: absolute;
+	bottom: -34px;
+	right: 20px;
+	background-color: #DBD2CA;
+	padding: 8px 16px;
+	border-radius: 0 0 2px 2px;
+	box-shadow: .25rem .5rem 1rem 0 rgba(0, 0, 0, 0.1);
+	font-size: 12px;
+	font-weight: 600;
+	color: #4E4A47;
+	display: flex;
+	flex-direction: row;
+}
+
+.switch-wrapper {
+	position: relative;
+}
+
+.switch-label {
+	padding: 0 8px
+}
+
+.switch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	z-index: 10;
+	opacity: 0;
+}
+
+.switch-btn {
+	box-sizing: border-box;
+	position: relative;
+	outline: none;
+	width: 2rem;
+	height: 1.1rem;
+	display: block;
+	
+	cursor: pointer;
+	background: #f0f0f0;
+	border-radius: 2rem;
+	padding: 3px;
+	transition: all .4s ease;
+}
+
+.switch-btn::after {
+	position: relative;
+	left: 0;
+	display: block;
+	content: "";
+	width: 50%;
+	height: 100%;
+	border-radius: 50%;
+	background: white;
+	transition: all .2s ease;
+}
+
+.switch:checked + .switch-btn {
+	background: #79ABAA;
+}
+
+.switch:checked + .switch-btn::after {
+	left: 50%;
+}
+													

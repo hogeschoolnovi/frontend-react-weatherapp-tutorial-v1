@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+# Weather App Tutorial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deze tutorial is ontwikkelt om je stapsgewijs wegwijs te maken in de wat meer advanced concepten van React, naar
+aanleiding van de content uit de cursus **React** op EdHub.
 
-## Available Scripts
+Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Eindresultaat
 
-### `npm start`
+Wanneer je de volledige tutorial afgerond hebt, zal de webpagina er zo uit komen te zien:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Eindresultaat](src/assets/screenshot.gif)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## De applicatie starten
 
-### `npm test`
+Als je het project gecloned hebt naar jouw locale machine, installeer je eerst de node_modules door het volgende
+commando in de terminal te runnen:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm install`
 
-### `npm run build`
+Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm start`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina in de browser te bekijken. Begin met
+het maken van wijzigingen in `src/App.js`: elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op
+de webpagina.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tussenstappen en antwoord-branches bekijken
 
-### `npm run eject`
+De tutorial werkt in stapjes. Na elke stap kun je de bijbehorende branch bekijken om te zien hoe de applicatie er op dat
+moment uit zou moeten zien of de Githistory doorlopen. Let hierbij wel op dat je eerst even naar het begin moet door een aantal keer op de  `<--`-toets te drukken, om daarna in chronologische volgorde door de commits te lopen.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Stap 1: Weersvoorspelling Utrecht ophalen
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+*Branch* `stap-1-weersvoorspelling-ophalen`
 
-## Learn More
+| Bestand  | Tussenstappen                                                | Overzicht                                                    |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-1-weersvoorspelling-ophalen/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-1-weersvoorspelling-ophalen/src/App.js) |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Stap 2: Zoektermen doorgeven
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Branch* `stap-2-zoektermen-doorgeven`
 
-### Code Splitting
+| Bestand        | Tussenstappen                                                | Overzicht                                                    |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js*       | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-1-weersvoorspelling-ophalen/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-2-zoektermen-doorgeven/src/App.js) |
+| *SearchBar.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-2-zoektermen-doorgeven/src/components/searchBar/SearchBar.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-2-zoektermen-doorgeven/src/components/searchBar/SearchBar.js) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Stap 3: Zoeken wanneer user-input veranderd
 
-### Analyzing the Bundle Size
+*Branch* `stap-3-dynamisch-zoeken`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Bestand  | Tussenstappen                                                | Overzicht                                                    |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-3-dynamisch-zoeken/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-3-dynamisch-zoeken/src/App.js) |
 
-### Making a Progressive Web App
+### Stap 4: Conditionele properties doorgeven
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+*Branch* `stap-4-data-conditioneel-doorgeven`
 
-### Advanced Configuration
+| Bestand          | Tussenstappen                                                | Overzicht                                                    |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js*         | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-4-data-conditioneel-doorgeven/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-4-data-conditioneel-doorgeven/src/App.js) |
+| *ForecastTab.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-4-data-conditioneel-doorgeven/src/pages/forecastTab/ForecastTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-4-data-conditioneel-doorgeven/src/pages/forecastTab/ForecastTab.js) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Stap 5: Meerdere voorspellingen weergeven door data-iteratie
 
-### Deployment
+*Branch* `stap-5-data-iteratie-en-keys`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Bestand          | Tussenstappen                                                | Overzicht                                                    |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *ForecastTab.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-5-data-iteratie-en-keys/src/pages/forecastTab/ForecastTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-5-data-iteratie-en-keys/src/pages/forecastTab/ForecastTab.js) |
 
-### `npm run build` fails to minify
+### Stap 6: Errors afhandelen en weergeven op de pagina
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Branch* `stap-6-error-afhandeling`
+
+| Bestand          | Tussenstappen                                                | Overzicht                                                    |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js*         | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-6-error-afhandeling/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-6-error-afhandeling/src/App.js) |
+| *ForecastTab.js* | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-6-error-afhandeling/src/pages/forecastTab/ForecastTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-6-error-afhandeling/src/pages/forecastTab/ForecastTab.js) |
+
+### Stap 7: Laadtijden afhandelen en weergeven op de pagina
+
+*Branch* `stap-7-laadtijd-afhandeling`
+
+| Bestand          | Tussenstappen                                                | Overzicht                                                    |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *ForecastTab.js* | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-7-laadtijd-afhandeling/src/pages/forecastTab/ForecastTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-7-laadtijd-afhandeling/src/pages/forecastTab/ForecastTab.js) |
+
+### Stap 8: Tabbladen implementeren
+
+*Branch* `stap-8-tabbladen`
+
+| Bestand         | Tussenstappen                                                | Overzicht                                                    |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js*        | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-8-tabbladen/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-8-tabbladen/src/App.js) |
+| *TabBarMenu.js* | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-8-tabbladen/src/components/tabBarMenu/TabBarMenu.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-8-tabbladen/src/components/tabBarMenu/TabBarMenu.js) |
+
+### Stap 9: Helperfuncties externaliseren en inzetten
+
+*Branch* `stap-9-helper-functies`
+
+| Bestand               | Tussenstappen                                                | Overzicht                                                    |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *App.js*              | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/App.js) |
+| *ForecastTab.js*      | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/pages/forecastTab/ForecastTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/pages/forecastTab/ForecastTab.js) |
+| *TodayTab.js*         | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/pages/todayTab/TodayTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/pages/todayTab/TodayTab.js) |
+| *kelvinToCelsius.js*  | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/helpers/kelvinToCelsius.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/helpers/kelvinToCelsius.js) |
+| *createTimeString.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/helpers/createTimeString.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/helpers/createTimeString.js) |
+| *createDateString.js* | [Githistory](https://github.githistory/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/helpers/createDateString.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-9-helper-functies/src/helpers/createDateString.js) |
+
+### Stap 10: Component-mapper bouwen
+
+*Branch* `stap-10-component-mapper`
+
+| Bestand            | Tussenstappen                                                | Overzicht                                                    |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *WeatherDetail.js* | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-10-component-mapper/src/components/weatherDetail/WeatherDetail.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-10-component-mapper/src/components/weatherDetail/WeatherDetail.js) |
+| *iconMapper.js*    | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-10-component-mapper/src/helpers/iconMapper.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-10-component-mapper/src/helpers/iconMapper.js) |
+
+### Stap 11: Context en een custom Provider-component opzetten
+
+*Branch* `stap-11-context-custom-provider-component`
+
+| Bestand          | Tussenstappen                                                | Overzicht                                                    |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *TempContext.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-11-context-custom-provider-component/src/context/TempContext.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-11-context-custom-provider-component/src/context/TempContext.js) |
+| *index.js*       | [Githistory](https://githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-11-context-custom-provider-component/src/index.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-11-context-custom-provider-component/src/index.js) |
+
+### Stap 12: Data in de context plaatsen
+
+*Branch* `stap-12-context-data`
+
+| Bestand              | Tussenstappen                                                | Overzicht                                                    |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *TempContext.js*     | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-12-context-data/src/context/TempContext.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-12-context-data/src/context/TempContext.js) |
+| *kelvinToFahrenheit* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-12-context-data/src/helpers/kelvinToFahrenheit.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-12-context-data/src/helpers/kelvinToFahrenheit.js) |
+
+### Stap 13: Context laten consumeren door componenten en pagina's
+
+*Branch* `stap-13-context-consumeren`
+
+| Bestand            | Tussenstappen                                                | Overzicht                                                    |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| *ForecastTab.js*   | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-13-context-consumeren/src/pages/forecastTab/ForecastTab.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-13-context-consumeren/src/pages/forecastTab/ForecastTab.js) |
+| *WeatherDetail.js* | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-13-context-consumeren/src/components/weatherDetail/WeatherDetail.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-13-context-consumeren/src/components/weatherDetail/WeatherDetail.js) |
+| *App.js*           | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-13-context-consumeren/src/App.js) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/blob/stap-13-context-consumeren/src/App.js) |
+| *MetricSlider.js*  | [Githistory](https://github.githistory.xyz/hogeschoolnovi/frontend-react-weatherapp-tutorial/tree/stap-13-context-consumeren/src/components/metricSlider) | [Eindresultaat](https://github.com/hogeschoolnovi/frontend-react-weatherapp-tutorial/tree/stap-13-context-consumeren/src/components/metricSlider) |

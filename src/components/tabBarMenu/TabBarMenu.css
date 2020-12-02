@@ -1,0 +1,25 @@
+.tab-bar {
+	margin-bottom: 30px;
+}
+
+.tab-bar ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.tab-bar a,
+.tab-bar a:visited {
+	color: #C6BCB3;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0 0 16px 0;
+	margin: 0 20px 0 0;
+	cursor: pointer;
+}
+
+.tab-bar a.active {
+	color: #33312F;
+	border-bottom: 1px solid #C6BCB3;
+}
