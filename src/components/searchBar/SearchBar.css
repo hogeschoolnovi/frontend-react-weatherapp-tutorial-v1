@@ -1,0 +1,26 @@
+.searchbar {
+    margin: 0 0 16px 0;
+}
+
+.searchbar input {
+    border-radius: 2px 0 0 2px;
+    border: none;
+    padding: 8px 16px;
+    width: 70%;
+    outline: none;
+}
+
+.searchbar button {
+    border-radius: 0 2px 2px 0;
+    border: none;
+    padding: 8px 16px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.searchbar input,
+.searchbar button {
+    font-family: 'Core Sans G', Arial, sans-serif;
+}
