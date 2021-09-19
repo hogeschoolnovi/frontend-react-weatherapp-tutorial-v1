@@ -4,12 +4,13 @@ import './SearchBar.css';
 function SearchBar() {
   const [query, setQuery] = useState('');
 
-  function onFormSubmit() {
+  function onFormSubmit(e) {
+    e.preventDefault();
     console.log('submitted!')
   }
 
   return (
-    <form className="searchbar">
+    <form className="searchbar" onSubmit={onFormSubmit}>
       <input
         type="text"
         name="search"
