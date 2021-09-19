@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ForecastTab.css';
 
 function ForecastTab({ coordinates }) {
+  const [forecasts, setForecasts] = useState([]);
   console.log(coordinates);
 
   return (
