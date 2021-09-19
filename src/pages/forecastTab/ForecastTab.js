@@ -17,6 +17,9 @@ function ForecastTab({ coordinates }) {
         console.error(e);
       }
     }
+    if (coordinates) {
+      fetchData();
+    }
   }, [coordinates]);
 
   return (
