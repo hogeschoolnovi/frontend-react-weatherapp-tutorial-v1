@@ -23,7 +23,7 @@ function App() {
     }
 
     fetchData();
-  }, []);
+  }, [location]);
 
   return (
     <>
