@@ -6,7 +6,13 @@ function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
 
   useEffect(() => {
-    // doe dingen!
+    async function fetchData() {
+      try {
+        const result = await <request-komt-hier>;
+      } catch(e) {
+        console.error(e);
+      }
+    }
   }, [coordinates]);
 
   return (
