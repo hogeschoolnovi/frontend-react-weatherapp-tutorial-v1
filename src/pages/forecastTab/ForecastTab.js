@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ForecastTab.css';
 
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
-  console.log(coordinates);
+
+  useEffect(() => {
+    // doe dingen!
+  }, [coordinates]);
 
   return (
     <div className="tab-wrapper">
