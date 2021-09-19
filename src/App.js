@@ -22,6 +22,7 @@ function App() {
       }
     }
 
+    fetchData();
   }, []);
 
   return (
