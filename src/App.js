@@ -10,7 +10,8 @@ const apiKey = 'plaats jouw unieke API key hier';
 function App() {
   async function fetchData() {
     try {
-      const result = await <mijn-request-komt-hier>;
+      const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=utrecht,nl&appid=${apiKey}&lang=nl`);
+      console.log(result.data);
     } catch(e) {
       console.error(e);
     }
