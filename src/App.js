@@ -8,6 +8,14 @@ import './App.css';
 const apiKey = 'plaats jouw unieke API key hier';
 
 function App() {
+  async function fetchData() {
+    try {
+      const result = await <mijn-request-komt-hier>;
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
   return (
     <>
       <div className="weather-container">
