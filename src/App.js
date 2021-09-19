@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=utrecht,nl&appid=${apiKey}&lang=nl`);
+        const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location},nl&appid=${apiKey}&lang=nl`);
         console.log(result.data);
         setWeatherData(result.data);
       } catch (e) {
