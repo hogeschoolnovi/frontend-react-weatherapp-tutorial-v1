@@ -3,6 +3,7 @@ import axios from 'axios';
 import SearchBar from './components/searchBar/SearchBar';
 import TabBarMenu from './components/tabBarMenu/TabBarMenu';
 import MetricSlider from './components/metricSlider/MetricSlider';
+import ForecastTab from './pages/forecastTab/ForecastTab';
 import './App.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
