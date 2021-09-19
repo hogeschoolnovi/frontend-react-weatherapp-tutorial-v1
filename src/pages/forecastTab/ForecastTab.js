@@ -10,8 +10,9 @@ function ForecastTab({ coordinates }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const result = await <request-komt-hier>;
-      } catch(e) {
+        const result = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${VOEG HIER LATITUDE TOE}&lon=${VOEG HIER LONGITUDE TOE}&exclude=minutely,current,hourly&appid=${JOUW API KEY}&lang=nl`);
+        console.log(result.data);
+      } catch (e) {
         console.error(e);
       }
     }
