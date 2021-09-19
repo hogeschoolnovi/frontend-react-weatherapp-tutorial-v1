@@ -22,7 +22,9 @@ function App() {
       }
     }
 
-    fetchData();
+    if (location) {
+      fetchData();
+    }
   }, [location]);
 
   return (
@@ -31,15 +33,15 @@ function App() {
 
         {/*HEADER -------------------- */}
         <div className="weather-header">
-          <SearchBar setLocationHandler={setLocation} />
+          <SearchBar setLocationHandler={setLocation}/>
 
           <span className="location-details">
             {Object.keys(weatherData).length > 0 &&
-              <>
-                <h2>{weatherData.weather[0].description}</h2>
-                <h3>{weatherData.name}</h3>
-                <h1>{weatherData.main.temp}</h1>
-              </>
+            <>
+              <h2>{weatherData.weather[0].description}</h2>
+              <h3>{weatherData.name}</h3>
+              <h1>{weatherData.main.temp}</h1>
+            </>
             }
           </span>
         </div>
