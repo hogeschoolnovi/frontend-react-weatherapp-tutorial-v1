@@ -3,6 +3,7 @@ import './ForecastTab.css';
 
 function ForecastTab({ coordinates }) {
   console.log(coordinates);
+
   return (
     <div className="tab-wrapper">
       <article className="forecast-day">
