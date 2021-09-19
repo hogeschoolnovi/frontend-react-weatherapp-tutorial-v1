@@ -3,18 +3,18 @@ import './SearchBar.css';
 
 function SearchBar() {
   return (
-    <span className="searchbar">
+    <form className="searchbar">
       <input
         type="text"
         name="search"
         placeholder="Zoek een stad in Nederland"
       />
 
-      <button type="button">
+      <button type="submit">
         Zoek
       </button>
-    </span>
+    </form>
   );
-};
+}
 
 export default SearchBar;

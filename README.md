@@ -22,3 +22,6 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
 
 ## Tussenstappen bekijken
 De tutorial werkt in stapjes. Na elke stap kun je de bijbehorende branch bekijken om te zien hoe de applicatie er op dat moment uit zou moeten zien:
+1. **Stap 1**: Weersvoorspelling Utrecht ophalen - Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();
+2. **Stap 2**: Zoektermen doorgeven - Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();
+3. **Stap 3**: Dynamisch zoeken - Bekijk het stapje-voor-stapje in de [Githistory]() of de volledige code in [deze branch]();

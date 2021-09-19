@@ -11,6 +11,6 @@ function WeatherDetail() {
       <p>13&deg; C</p>
     </section>
   );
-};
+}
 
 export default WeatherDetail;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './MetricSlider.css';
 
-const MetricSlider = () => {
+function MetricSlider() {
   return (
     <div className="weather-container-extention">
       Weergeven in
@@ -28,6 +28,6 @@ const MetricSlider = () => {
       </p>
     </div>
   );
-};
+}
 
 export default MetricSlider;

@@ -18,6 +18,6 @@ function TabBarMenu() {
       </ul>
     </nav>
   );
-};
+}
 
 export default TabBarMenu;
