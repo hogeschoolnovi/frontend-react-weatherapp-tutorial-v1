@@ -12,7 +12,7 @@ function ForecastTab({ coordinates }) {
       try {
         const result = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates?.lon}&exclude=minutely,current,hourly&appid=${apiKey}&lang=nl`);
         console.log(result.data);
-        setForecasts(result.data);
+        setForecasts(result.data.daily.slice(1, 6));
       } catch (e) {
         console.error(e);
       }
