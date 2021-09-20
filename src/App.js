@@ -15,12 +15,15 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
+      toggleError(false);
+
       try {
         const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location},nl&appid=${apiKey}&lang=nl`);
         console.log(result.data);
         setWeatherData(result.data);
       } catch (e) {
         console.error(e);
+        toggleError(true);
       }
     }
 
