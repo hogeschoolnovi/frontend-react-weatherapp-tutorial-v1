@@ -24,6 +24,11 @@ function ForecastTab({ coordinates }) {
 
   return (
     <div className="tab-wrapper">
+      {forecasts.map((day) => {
+        return (
+          // alle elementen
+        );
+      })}
       <article className="forecast-day">
         <p className="day-description">
           Maandag
