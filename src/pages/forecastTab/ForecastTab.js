@@ -26,23 +26,23 @@ function ForecastTab({ coordinates }) {
     <div className="tab-wrapper">
       {forecasts.map((day) => {
         return (
-          // alle elementen
-        );
-      })}
-      <article className="forecast-day">
-        <p className="day-description">
-          Maandag
-        </p>
+          <article className="forecast-day">
+            <p className="day-description">
+              Maandag
+            </p>
 
-        <section className="forecast-weather">
+            <section className="forecast-weather">
             <span>
               12&deg; C
             </span>
-          <span className="weather-description">
+              <span className="weather-description">
               Licht Bewolkt
             </span>
-        </section>
-      </article>
+            </section>
+          </article>
+        );
+      })}
+
 
       <article className="forecast-day">
         <p className="day-description">
