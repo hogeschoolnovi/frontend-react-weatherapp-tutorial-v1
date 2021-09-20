@@ -28,15 +28,15 @@ function ForecastTab({ coordinates }) {
         return (
           <article className="forecast-day">
             <p className="day-description">
-              Maandag
+              {day.dt}
             </p>
 
             <section className="forecast-weather">
             <span>
-              12&deg; C
+              {day.temp.day}
             </span>
               <span className="weather-description">
-              Licht Bewolkt
+              {day.weather[0].description}
             </span>
             </section>
           </article>
