@@ -32,7 +32,7 @@ function ForecastTab({ coordinates }) {
     <div className="tab-wrapper">
       {forecasts.map((day) => {
         return (
-          <article className="forecast-day">
+          <article className="forecast-day" key={day.dt}>
             <p className="day-description">
               {createDateString(day.dt)}
             </p>
