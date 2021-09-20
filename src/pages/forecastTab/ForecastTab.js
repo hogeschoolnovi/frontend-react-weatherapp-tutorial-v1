@@ -7,6 +7,12 @@ const apiKey = 'plaats jouw unieke API key hier';
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
 
+  function createDateString(timestamp) {
+    const day = new Date(timestamp * 1000);
+
+    return day.toLocaleDateString('nl-NL', { weekday: 'long' });
+  }
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -28,7 +34,7 @@ function ForecastTab({ coordinates }) {
         return (
           <article className="forecast-day">
             <p className="day-description">
-              {day.dt}
+              {createDateString(day.dt)}
             </p>
 
             <section className="forecast-weather">
