@@ -6,6 +6,7 @@ const apiKey = 'plaats jouw unieke API key hier';
 
 function ForecastTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
+  const [error, toggleError] = useState(false);
 
   function createDateString(timestamp) {
     const day = new Date(timestamp * 1000);
