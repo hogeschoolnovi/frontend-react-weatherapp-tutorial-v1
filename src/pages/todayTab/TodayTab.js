@@ -44,6 +44,7 @@ function TodayTab({ coordinates }) {
           return <WeatherDetail
             temp={forecast.temp}
             type={forecast.weather[0].main}
+            description={forecast.weather[0].description}
           />
         })}
       </div>
