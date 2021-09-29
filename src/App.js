@@ -68,16 +68,16 @@ function App() {
           <div className="weather-content">
             <TabBarMenu/>
 
-            <Switch>
-              <div className="tab-wrapper">
+            <div className="tab-wrapper">
+              <Switch>
                 <Route path="/komende-week">
                   <ForecastTab coordinates={weatherData.coord}/>
                 </Route>
                 <Route path="/" exact>
                   <TodayTab coordinates={weatherData.coord}/>
                 </Route>
-              </div>
-            </Switch>
+              </Switch>
+            </div>
           </div>
         </Router>
 
