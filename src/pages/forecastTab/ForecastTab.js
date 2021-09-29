@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import kelvinToCelsius from '../../helpers/kelvinToCelsius';
+import createDateString from '../../helpers/createDateString';
 import './ForecastTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
