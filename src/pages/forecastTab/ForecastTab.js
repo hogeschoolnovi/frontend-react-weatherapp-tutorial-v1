@@ -10,12 +10,6 @@ function ForecastTab({ coordinates }) {
   const [error, toggleError] = useState(false);
   const [loading, toggleLoading] = useState(false);
 
-  function createDateString(timestamp) {
-    const day = new Date(timestamp * 1000);
-
-    return day.toLocaleDateString('nl-NL', { weekday: 'long' });
-  }
-
   useEffect(() => {
     async function fetchData() {
       toggleError(false);
