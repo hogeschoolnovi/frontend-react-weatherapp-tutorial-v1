@@ -71,6 +71,9 @@ function App() {
                 <Route path="/komende-week">
                   <ForecastTab coordinates={weatherData.coord}/>
                 </Route>
+                <Route path="/" exact>
+                  
+                </Route>
               </div>
             </Switch>
           </div>
