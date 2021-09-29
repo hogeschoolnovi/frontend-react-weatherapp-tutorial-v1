@@ -62,6 +62,7 @@ function App() {
         </div>
 
         {/*CONTENT ------------------ */}
+        <Router>
         <div className="weather-content">
           <TabBarMenu/>
 
@@ -69,6 +70,7 @@ function App() {
             <ForecastTab coordinates={weatherData.coord}/>
           </div>
         </div>
+        </Router>
 
         <MetricSlider/>
       </div>
