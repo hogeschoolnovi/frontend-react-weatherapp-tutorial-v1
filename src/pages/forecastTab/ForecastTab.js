@@ -39,6 +39,7 @@ function ForecastTab({ coordinates }) {
   return (
     <div className="tab-wrapper">
       {error && <span>Er is iets misgegaan met het ophalen van de data</span>}
+      {loading && <span>Loading...</span>}
       {forecasts.length === 0 && !error &&
         <span className="no-forecast">
           Zoek eerst een locatie om het weer voor deze week te bekijken
