@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import WeatherDetail from '../../components/weatherDetail/WeatherDetail';
 import './TodayTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
@@ -39,7 +40,7 @@ function TodayTab({ coordinates }) {
   return (
     <div className="tab-wrapper">
       <div className="chart">
-        Hier komt de chart!
+        <WeatherDetail />
       </div>
       <div className="legend">
         <span>08:00 uur</span>
