@@ -45,7 +45,7 @@ function App() {
         <div className="weather-header">
           <SearchBar setLocationHandler={setLocation}/>
           {error &&
-            <span className="wrong-location-error">
+          <span className="wrong-location-error">
               Oeps! Deze locatie bestaat niet
             </span>
           }
@@ -63,13 +63,15 @@ function App() {
 
         {/*CONTENT ------------------ */}
         <Router>
-        <div className="weather-content">
-          <TabBarMenu/>
+          <div className="weather-content">
+            <TabBarMenu/>
 
-          <div className="tab-wrapper">
-            <ForecastTab coordinates={weatherData.coord}/>
+            <Switch>
+              <div className="tab-wrapper">
+                <ForecastTab coordinates={weatherData.coord}/>
+              </div>
+            </Switch>
           </div>
-        </div>
         </Router>
 
         <MetricSlider/>
