@@ -68,7 +68,9 @@ function App() {
 
             <Switch>
               <div className="tab-wrapper">
-                <ForecastTab coordinates={weatherData.coord}/>
+                <Route path="/komende-week">
+                  <ForecastTab coordinates={weatherData.coord}/>
+                </Route>
               </div>
             </Switch>
           </div>
