@@ -5,9 +5,12 @@ const apiKey = 'plaats jouw unieke API key hier';
 
 function TodayTab({ coordinates }) {
 	useEffect(() => {
+		async function fetchData() {
+
+		}
 
 	}, [coordinates]);
-	
+
 	return(
 		<div className="tab-wrapper">
 			<div className="chart">
