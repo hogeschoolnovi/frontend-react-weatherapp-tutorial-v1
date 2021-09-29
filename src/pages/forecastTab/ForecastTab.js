@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import kelvinToCelsius from '../../helpers/kelvinToCelsius';
 import './ForecastTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
@@ -54,7 +55,7 @@ function ForecastTab({ coordinates }) {
 
             <section className="forecast-weather">
             <span>
-              {day.temp.day}
+              {kelvinToCelsius(day.temp.day)}
             </span>
               <span className="weather-description">
               {day.weather[0].description}
