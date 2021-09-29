@@ -7,12 +7,12 @@ function TabBarMenu() {
     <nav className="tab-bar">
       <ul>
         <li>
-          <NavLink className="active" to="/">
+          <NavLink activeClassName="active" to="/">
             Vandaag
           </NavLink>
         </li>
         <li>
-          <NavLink to="/komende-week">
+          <NavLink activeClassName="active" to="/komende-week">
             Komende week
           </NavLink>
         </li>
