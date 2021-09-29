@@ -9,6 +9,10 @@ function TodayTab({ coordinates }) {
 
 		}
 
+		if (coordinates) {
+			fetchData();
+		}
+
 	}, [coordinates]);
 
 	return(
