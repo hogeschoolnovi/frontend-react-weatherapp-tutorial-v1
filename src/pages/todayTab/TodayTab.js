@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './TodayTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
 
 function TodayTab({ coordinates }) {
+	const [forecasts, setForecasts] = useState([]);
+
 	useEffect(() => {
 		async function fetchData() {
 			try {
