@@ -7,7 +7,7 @@ function TabBarMenu() {
     <nav className="tab-bar">
       <ul>
         <li>
-          <NavLink activeClassName="active" to="/">
+          <NavLink activeClassName="active" to="/" exact>
             Vandaag
           </NavLink>
         </li>
