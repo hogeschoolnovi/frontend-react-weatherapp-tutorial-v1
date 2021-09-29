@@ -74,7 +74,7 @@ function App() {
                   <ForecastTab coordinates={weatherData.coord}/>
                 </Route>
                 <Route path="/" exact>
-                  <TodayTab />
+                  <TodayTab coordinates={weatherData.coord}/>
                 </Route>
               </div>
             </Switch>
