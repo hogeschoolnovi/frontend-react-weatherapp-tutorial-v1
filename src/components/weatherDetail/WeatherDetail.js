@@ -7,7 +7,7 @@ function WeatherDetail({ description, temp, type }) {
   return (
     <section className="day-part">
       <span className="icon-wrapper">
-        *Icoontje van het weer*
+        {iconMapper(type)}
       </span>
       <p className="description">{description}</p>
       <p>{kelvinToCelsius(temp)}</p>
