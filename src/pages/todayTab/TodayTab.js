@@ -17,7 +17,7 @@ function TodayTab({ coordinates }) {
       toggleLoading(true);
 
       try {
-        const result = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,current,daily&appid=${apiKey}`);
+        const result = await axios.get(`https://api.openweathermap.org/data2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,current,daily&appid=${apiKey}`);
         setForecasts([
           result.data.hourly[3],
           result.data.hourly[5],
