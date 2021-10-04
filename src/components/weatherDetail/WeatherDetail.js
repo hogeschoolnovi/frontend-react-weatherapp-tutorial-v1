@@ -1,6 +1,7 @@
 import React from 'react';
 import './WeatherDetail.css';
 import kelvinToCelsius from '../../helpers/kelvinToCelsius';
+import iconMapper from '../../helpers/iconMapper';
 
 function WeatherDetail({ description, temp, type }) {
   return (
