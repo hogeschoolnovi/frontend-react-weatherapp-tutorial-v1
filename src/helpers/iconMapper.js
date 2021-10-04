@@ -18,6 +18,12 @@ function iconMapper(weatherType) {
       return <Rain/>;
     case 'Snow':
       return <Snow/>;
+    case 'Mist':
+    case 'Haze':
+    case 'Smoke':
+    case 'Fog':
+    default:
+      return <Wind/>;
   }
 }
 
