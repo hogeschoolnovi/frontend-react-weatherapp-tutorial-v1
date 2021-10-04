@@ -5,7 +5,6 @@ import './TodayTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
 
-
 function TodayTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
   const [error, toggleError] = useState(false);
