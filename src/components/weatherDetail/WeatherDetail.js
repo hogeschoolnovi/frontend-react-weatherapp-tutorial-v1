@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherDetail.css';
 
-function WeatherDetail() {
+function WeatherDetail({ description, temp, type }) {
   return (
     <section className="day-part">
       <span className="icon-wrapper">
