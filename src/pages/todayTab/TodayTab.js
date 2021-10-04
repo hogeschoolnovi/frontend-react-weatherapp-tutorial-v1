@@ -5,6 +5,7 @@ import './TodayTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
 
+
 function TodayTab({ coordinates }) {
   const [forecasts, setForecasts] = useState([]);
   const [error, toggleError] = useState(false);
@@ -48,10 +49,10 @@ function TodayTab({ coordinates }) {
             description={forecast.weather[0].description}
           />
         })}
-      </div>
+      </div>    
       <div className="legend">
         {forecasts.map((forecast) => {
-          return <span>{forecast.dt}</span>
+          return <span key={`${forecast.dt}-timestamp`}>{forecast.dt}</span>
         })}
       </div>
     </div>
