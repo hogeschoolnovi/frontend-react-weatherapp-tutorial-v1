@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import WeatherDetail from '../../components/weatherDetail/WeatherDetail';
+import createTimeString from '../../helpers/createTimeString';
 import './TodayTab.css';
 
 const apiKey = 'plaats jouw unieke API key hier';
@@ -51,7 +52,7 @@ function TodayTab({ coordinates }) {
       </div>    
       <div className="legend">
         {forecasts.map((forecast) => {
-          return <span key={`${forecast.dt}-timestamp`}>{forecast.dt}</span>
+          return <span key={`${forecast.dt}-timestamp`}>{createTimeString(forecast.dt)}</span>
         })}
       </div>
     </div>
