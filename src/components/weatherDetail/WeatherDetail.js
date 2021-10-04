@@ -8,7 +8,7 @@ function WeatherDetail({ description, temp, type }) {
       <span className="icon-wrapper">
         *Icoontje van het weer*
       </span>
-      <p className="description">Zonnig</p>
+      <p className="description">{description}</p>
       <p>{kelvinToCelsius(temp)}</p>
     </section>
   );
