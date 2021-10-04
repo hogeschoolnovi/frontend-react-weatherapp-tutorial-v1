@@ -7,7 +7,9 @@ import { ReactComponent as Wind } from '../assets/icons/wind.svg';
 import { ReactComponent as Drizzle } from '../assets/icons/sun-rain.svg';
 
 function iconMapper(weatherType) {
+  switch (weatherType) {
 
+  }
 }
 
 export default iconMapper;
