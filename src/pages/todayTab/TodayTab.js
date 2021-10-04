@@ -17,7 +17,7 @@ function TodayTab({ coordinates }) {
       toggleLoading(true);
 
       try {
-        const result = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,current,daily&appid=${apiKey}`);
+        const result = await axios.get(`https://api.openweathermap.org/data2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=minutely,current,daily&appid=${apiKey}`);
         setForecasts([
           result.data.hourly[3],
           result.data.hourly[5],
@@ -55,6 +55,8 @@ function TodayTab({ coordinates }) {
           return <span key={`${forecast.dt}-timestamp`}>{createTimeString(forecast.dt)}</span>
         })}
       </div>
+      {error && <span>Het ophalen van de voorspellingen is mislukt. Probeer het opnieuw.</span>}
+      {loading && (<span>Loading...</span>)}
     </div>
   );
 }
