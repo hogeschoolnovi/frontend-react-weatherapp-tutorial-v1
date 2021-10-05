@@ -15,6 +15,10 @@ function TempContextProvider({ children }) {
     }
   }
 
+  function kelvinToMetric() {
+
+  }
+
   const contextData = {};
 
   return (
