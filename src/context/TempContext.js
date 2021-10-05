@@ -6,7 +6,11 @@ function TempContextProvider({ children }) {
   const [selectedMetric, toggleSelectedMetric] = useState('celsius');
 
   function toggleTemp() {
-
+    if (selectedMetric === 'celsius') {
+      toggleSelectedMetric('fahrenheit');
+    } else {
+      toggleSelectedMetric('celsius');
+    }
   }
 
   const contextData = {};
