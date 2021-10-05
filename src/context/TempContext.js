@@ -1,4 +1,6 @@
 import React, { createContext, useState } from 'react';
+import kelvinToFahrenheit from '../helpers/kelvinToFahrenheit';
+import kelvinToCelsius from '../helpers/kelvinToCelsius';
 
 export const TempContext = createContext({});
 
