@@ -2,12 +2,12 @@ import React, { createContext } from 'react';
 
 export const TempContext = createContext({});
 
-function TempContextProvider() {
+function TempContextProvider({ children }) {
   const contextData = {};
 
   return (
     <TempContext.Provider value={contextData}>
-      {/*hier komt het component waar we onze eigen provider omheen wikkelen*/}
+      { children }
     </TempContext.Provider>
   )
 }
