@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { TempContext } from '../../context/TempContext';
-import kelvinToCelsius from '../../helpers/kelvinToCelsius';
 import iconMapper from '../../helpers/iconMapper';
 import './WeatherDetail.css';
 
@@ -13,7 +12,7 @@ function WeatherDetail({ description, temp, type }) {
         {iconMapper(type)}
       </span>
       <p className="description">{description}</p>
-      <p>{kelvinToCelsius(temp)}</p>
+      <p>{kelvinToMetric(temp)}</p>
     </section>
   );
 }
