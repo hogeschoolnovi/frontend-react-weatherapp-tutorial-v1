@@ -5,6 +5,10 @@ export const TempContext = createContext({});
 function TempContextProvider({ children }) {
   const [selectedMetric, toggleSelectedMetric] = useState('celsius');
 
+  function toggleTemp() {
+
+  }
+
   const contextData = {};
 
   return (
