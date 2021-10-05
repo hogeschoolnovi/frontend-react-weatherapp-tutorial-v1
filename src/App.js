@@ -21,6 +21,8 @@ function App() {
   const [location, setLocation] = useState('');
   const [error, toggleError] = useState(false);
 
+  const { kelvinToMetric } = useContext(TempContext);
+
   useEffect(() => {
     async function fetchData() {
       toggleError(false);
