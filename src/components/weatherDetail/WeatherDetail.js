@@ -5,6 +5,7 @@ import iconMapper from '../../helpers/iconMapper';
 import './WeatherDetail.css';
 
 function WeatherDetail({ description, temp, type }) {
+  const { kelvinToMetric } = useContext(TempContext);
 
   return (
     <section className="day-part">
