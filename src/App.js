@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +10,7 @@ import TabBarMenu from './components/tabBarMenu/TabBarMenu';
 import MetricSlider from './components/metricSlider/MetricSlider';
 import ForecastTab from './pages/forecastTab/ForecastTab';
 import TodayTab from './pages/todayTab/TodayTab';
+import { TempContext } from './context/TempContext';
 import kelvinToCelsius from './helpers/kelvinToCelsius';
 import './App.css';
 
