@@ -12,6 +12,8 @@ function ForecastTab({ coordinates }) {
   const [error, toggleError] = useState(false);
   const [loading, toggleLoading] = useState(false);
 
+  const { kelvinToMetric } = useContext(TempContext);
+
   useEffect(() => {
     async function fetchData() {
       toggleError(false);
