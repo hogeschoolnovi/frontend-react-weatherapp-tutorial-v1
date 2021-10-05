@@ -6,7 +6,7 @@ function TempContextProvider() {
   const contextData = {};
 
   return (
-    <TempContext.Provider>
+    <TempContext.Provider value={contextData}>
       {/*hier komt het component waar we onze eigen provider omheen wikkelen*/}
     </TempContext.Provider>
   )
