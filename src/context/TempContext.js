@@ -15,11 +15,11 @@ function TempContextProvider({ children }) {
     }
   }
 
-  function kelvinToMetric() {
-    if (selectedMetric === 'celcius') {
-      return kelvinToCelsius;
+  function kelvinToMetric(kelvin) {
+    if (selectedMetric === 'celsius') {
+      return kelvinToCelsius(kelvin);
     } else {
-      return kelvinToFahrenheit;
+      return kelvinToFahrenheit(kelvin);
     }
   }
 
