@@ -16,7 +16,11 @@ function TempContextProvider({ children }) {
   }
 
   function kelvinToMetric() {
-
+    if (selectedMetric === 'celcius') {
+      return kelvinToCelsius;
+    } else {
+      return kelvinToFahrenheit;
+    }
   }
 
   const contextData = {};
