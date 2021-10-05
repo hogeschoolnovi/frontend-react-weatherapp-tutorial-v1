@@ -23,7 +23,10 @@ function TempContextProvider({ children }) {
     }
   }
 
-  const contextData = {};
+  const contextData = {
+    toggleTemp: toggleTemp,
+    kelvinToMetric: kelvinToMetric,
+  };
 
   return (
     <TempContext.Provider value={contextData}>
