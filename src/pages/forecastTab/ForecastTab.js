@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { TempContext } from '../../context/TempContext';
-import kelvinToCelsius from '../../helpers/kelvinToCelsius';
 import createDateString from '../../helpers/createDateString';
 import './ForecastTab.css';
 
@@ -53,7 +52,7 @@ function ForecastTab({ coordinates }) {
 
             <section className="forecast-weather">
             <span>
-              {kelvinToCelsius(day.temp.day)}
+              {kelvinToMetric(day.temp.day)}
             </span>
               <span className="weather-description">
               {day.weather[0].description}
