@@ -12,7 +12,9 @@ function MetricSlider() {
   }, []);
 
   useEffect(() => {
-    toggleTemp();
+    if(firstMount) {
+      toggleTemp();
+    }
   }, [checked]);
 
   return (
