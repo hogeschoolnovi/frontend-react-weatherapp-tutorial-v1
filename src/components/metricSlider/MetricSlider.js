@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MetricSlider.css';
 
 function MetricSlider() {
+  const [checked, toggleChecked] = useState(false);
+
   return (
     <div className="weather-container-extention">
       Weergeven in
