@@ -17,6 +17,8 @@ function MetricSlider() {
           type="checkbox"
           className="switch"
           id="metric-system"
+          value={checked}
+          onChange={() => toggleChecked(!checked)}
         />
 
         <label
