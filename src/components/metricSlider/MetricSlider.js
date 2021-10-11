@@ -1,10 +1,13 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { TempContext } from '../../context/TempContext';
 import './MetricSlider.css';
 
 function MetricSlider() {
   const [checked, toggleChecked] = useState(false);
   const { toggleTemp } = useContext(TempContext);
+
+  useEffect(() => {
+  }, []);
 
   return (
     <div className="weather-container-extention">
