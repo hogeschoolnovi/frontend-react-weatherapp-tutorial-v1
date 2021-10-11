@@ -7,7 +7,8 @@ function MetricSlider() {
   const { toggleTemp } = useContext(TempContext);
 
   useEffect(() => {
-  }, []);
+    toggleTemp();
+  }, [checked]);
 
   return (
     <div className="weather-container-extention">
