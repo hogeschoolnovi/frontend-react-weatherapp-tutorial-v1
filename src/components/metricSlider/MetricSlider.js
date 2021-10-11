@@ -4,6 +4,7 @@ import './MetricSlider.css';
 
 function MetricSlider() {
   const [checked, toggleChecked] = useState(false);
+  const [firstMount, toggleFirstMount] = useState(false);
   const { toggleTemp } = useContext(TempContext);
 
   useEffect(() => {
