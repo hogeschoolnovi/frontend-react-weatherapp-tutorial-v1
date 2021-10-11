@@ -4,6 +4,7 @@ import './MetricSlider.css';
 
 function MetricSlider() {
   const [checked, toggleChecked] = useState(false);
+  const { toggleTemp } = useContext(TempContext);
 
   return (
     <div className="weather-container-extention">
