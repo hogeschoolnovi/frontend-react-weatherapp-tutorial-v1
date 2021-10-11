@@ -8,6 +8,10 @@ function MetricSlider() {
   const { toggleTemp } = useContext(TempContext);
 
   useEffect(() => {
+    toggleFirstMount(true);
+  }, []);
+
+  useEffect(() => {
     toggleTemp();
   }, [checked]);
 
